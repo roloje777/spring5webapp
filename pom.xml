@@ -15,6 +15,11 @@
 	<description>simple web application</description>
 	<properties>
 		<java.version>17</java.version>
+		<start-class>guru.springframework.spring5webapp.Spring5webappApplication</start-class>
+		<!-- <maven.test.skip>true</maven.test.skip> -->
+
+			<start-class>guru.springframework.spring5webapp.Spring5webappApplication</start-class>
+
 	</properties>
 	<dependencies>
 		<dependency>
@@ -31,10 +36,16 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
+		 <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 
@@ -43,6 +54,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+
+					<mainClass>${start-class}</mainClass>
+
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
