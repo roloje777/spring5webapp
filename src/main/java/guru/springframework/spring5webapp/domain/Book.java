@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import guru.springframework.spring5webapp.domain.Publisher;
 
 @Entity
 public class Book {
@@ -15,6 +16,8 @@ public class Book {
     private String title;
     private String isbn;
 
+    @ManyToOne
+    private Publisher publisher;
     @ManyToMany
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "book-id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"))
@@ -27,6 +30,14 @@ public class Book {
         this.title = title;
         this.isbn = isbn;
 
+    }
+
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
     }
 
     public Long getId() {
