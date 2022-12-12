@@ -1,0 +1,30 @@
+Section2 Building a spring Bott We App
+
+Issues
+
+1. Unable to run the app from the IDE
+   workaround 
+   
+   I run from the terminal by skipping the tests and 
+   packaging to a fat jar.
+   then I start app using java -jar
+   
+>mvn package -DskipTests
+>java -jar ./target/spring5webapp-0.0.1-SNAPSHOT.jar
+
+2. To activate the H2 console on the web
+
+   add these lines to application.properties
+   spring.h2.console.enabled=true -> so it will open in browser (default is false)
+   spring.datasource.url=jdbc:h2:mem:testdb -> give your db a name
+   and then run as above in point one
+   
+   open conmsole in browser with http://localhost:8080/h2-console/
+   make sure that the databse in console login screen in browser has same database name
+   
+3. Thymleaf the directory displays templates.books, where books is
+    actually a subdirectory of templates
+    └── templates
+    └── books
+        └── list.html
+
