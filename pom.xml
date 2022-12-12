@@ -6,6 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.0.0</version>
+
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>guru.springframework</groupId>
@@ -14,11 +15,7 @@
 	<name>spring5webapp</name>
 	<description>simple web application</description>
 	<properties>
-		<java.version>17</java.version>
-		<start-class>guru.springframework.spring5webapp.Spring5webappApplication</start-class>
-		<!-- <maven.test.skip>true</maven.test.skip> -->
-
-			<start-class>guru.springframework.spring5webapp.Spring5webappApplication</start-class>
+		<java.version>11</java.version>
 
 	</properties>
 	<dependencies>
@@ -48,6 +45,8 @@
 			</exclusions>
 		</dependency>
 
+
+
 	</dependencies>
 
 	<build>
@@ -55,13 +54,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
 
-					<mainClass>${start-class}</mainClass>
-
-				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 

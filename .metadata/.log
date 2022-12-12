@@ -1,0 +1,338 @@
+!SESSION 2022-12-09 09:36:49.830 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=17.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-12-09 09:36:52.362
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [540]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-12-09 09:36:52.368
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [544]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [540]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-12-09 09:36:52.373
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [545]
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [549]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [540]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [544]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-12-09 09:36:52.377
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [546]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [540]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [544]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-12-09 09:36:52.381
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [549]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [540]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.jface 2 0 2022-12-09 09:37:18.438
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-09 09:37:18.439
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c5044fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3db5195,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-09 09:37:18.439
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b386a17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1cda75be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:37:23.434
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALB=9K+otwYCpbMghtQzIlnhcPhmswCBFHG4qEbpvi7LpZsBF4yN3HM2EHZuZ4oR0dOctj6sl3xl/LnfVUtsWAIWqK33CYlU4BIDSPeCPYWKoTyCB+BFYgDOF2/eLInm; Expires=Fri, 16 Dec 2022 09:37:23 GMT; Path=/". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:37:23 GMT
+
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:37:23.436
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALBCORS=9K+otwYCpbMghtQzIlnhcPhmswCBFHG4qEbpvi7LpZsBF4yN3HM2EHZuZ4oR0dOctj6sl3xl/LnfVUtsWAIWqK33CYlU4BIDSPeCPYWKoTyCB+BFYgDOF2/eLInm; Expires=Fri, 16 Dec 2022 09:37:23 GMT; Path=/; SameSite=None; Secure". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:37:23 GMT
+
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:37:23.479
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALB=A4q9q9EXcPffulmWjyrMOQbPehTERbnA1S/Toojd1dTKjqL9xYKwUhyP7tQ3GNSIoplyfsY6ixzlOreCZTvKh+sTXlyUuC+b58IVuf6x0MQkccYX9C2fAAHiHRj2; Expires=Fri, 16 Dec 2022 09:37:23 GMT; Path=/". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:37:23 GMT
+
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:37:23.479
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALBCORS=A4q9q9EXcPffulmWjyrMOQbPehTERbnA1S/Toojd1dTKjqL9xYKwUhyP7tQ3GNSIoplyfsY6ixzlOreCZTvKh+sTXlyUuC+b58IVuf6x0MQkccYX9C2fAAHiHRj2; Expires=Fri, 16 Dec 2022 09:37:23 GMT; Path=/; SameSite=None; Secure". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:37:23 GMT
+
+!SESSION 2022-12-09 09:37:43.022 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=17.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.fx.core.guice 4 0 2022-12-09 09:37:45.404
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core.guice [540]
+  Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext 4 0 2022-12-09 09:37:45.410
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext [544]
+  Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [540]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.proposals 4 0 2022-12-09 09:37:45.415
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.proposals [545]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [544]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [540]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.fx.ide.css.ui.extapi
+    -> Export-Package: org.eclipse.fx.ide.css.ui.extapi; bundle-symbolic-name="org.eclipse.fx.ide.css.ui"; bundle-version="3.7.0.202010120832"; version="0.0.0"; x-internal:="true"
+       org.eclipse.fx.ide.css.ui [549]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.cssext.ui 4 0 2022-12-09 09:37:45.420
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.cssext.ui [546]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.ide.css.cssext; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.fx.ide.css.cssext; bundle-version="3.7.0.202010120832"; singleton:="true"
+       org.eclipse.fx.ide.css.cssext [544]
+         Unresolved requirement: Require-Bundle: org.objectweb.asm; bundle-version="[5.0.1,8.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+              org.eclipse.fx.core.guice [540]
+                Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.fx.ide.css.ui 4 0 2022-12-09 09:37:45.424
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.ide.css.ui [549]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core.guice; bundle-version="2.3.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core.guice; bundle-version="3.7.0.202010120750"
+       org.eclipse.fx.core.guice [540]
+         Unresolved requirement: Import-Package: com.google.inject; version="[1.3.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.jface 2 0 2022-12-09 09:38:01.594
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-09 09:38:01.594
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42012093,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c538e62,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-09 09:38:01.594
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ca0a21f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@768d27e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:38:06.291
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALB=3z7TLrnFImAfhc6sFfryHNrqKlMlKzP7RrvqInmApp2sfZP7XpQ1gU+40n7m1L9+5zUY0AvRXe/iGpysTjPNzTWLez1mUOJJKUWju6VVVSk0H3AtyFT6I2w4KG1x; Expires=Fri, 16 Dec 2022 09:38:06 GMT; Path=/". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:38:06 GMT
+
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:38:06.291
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALBCORS=3z7TLrnFImAfhc6sFfryHNrqKlMlKzP7RrvqInmApp2sfZP7XpQ1gU+40n7m1L9+5zUY0AvRXe/iGpysTjPNzTWLez1mUOJJKUWju6VVVSk0H3AtyFT6I2w4KG1x; Expires=Fri, 16 Dec 2022 09:38:06 GMT; Path=/; SameSite=None; Secure". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:38:06 GMT
+
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:38:06.476
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALB=rEmsvWm9dKzFKM8B8wNZgnnUM+10cTpkvYZ3sm5NbfDPUH3dH8u88sVRE9I55xoCxT9XGvBr42OCJJAXG0j00i21dqP0X57kM3BLFFxhyurl9kL69euf+nJ5fOpc; Expires=Fri, 16 Dec 2022 09:38:06 GMT; Path=/". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:38:06 GMT
+
+
+!ENTRY org.apache.log4j 2 0 2022-12-09 09:38:06.477
+!MESSAGE org.apache.http.client.protocol.ResponseProcessCookies  - Invalid cookie header: "set-cookie: AWSALBCORS=rEmsvWm9dKzFKM8B8wNZgnnUM+10cTpkvYZ3sm5NbfDPUH3dH8u88sVRE9I55xoCxT9XGvBr42OCJJAXG0j00i21dqP0X57kM3BLFFxhyurl9kL69euf+nJ5fOpc; Expires=Fri, 16 Dec 2022 09:38:06 GMT; Path=/; SameSite=None; Secure". Invalid 'expires' attribute: Fri, 16 Dec 2022 09:38:06 GMT
+
