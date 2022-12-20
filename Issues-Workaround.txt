@@ -1,5 +1,22 @@
 Section2 Building a spring Bott We App
 
+SOLUTION
+============
+I solved the ussiew below by removing the spaces and ";" from my directory
+in which I store my project.
+It seems that the IDE's (both IntelliJ and Eclpse) don't seem to be able
+to find the path to the main application if they are in such folders.
+This was not an issue using javac command as I was running from inside
+thge project folder using relative paths.
+>java -jar ./target/spring5webapp-0.0.1-SNAPSHOT.jar
+
+Whe I chcked the path in IntelliJ -> edit run configuration, I realized it uses the
+absolute path to find the main method 
+/home/joao/Courses/UdemyCourses/SpringFramework5_Beginner_to_Guru/Projects/IntelliJ/sfg-di
+
+As You can See I added underscores instead of spaces and removed the ":".
+Not sure if colon was an issue....
+
 Issues
 
 1. Unable to run the app from the IDE
